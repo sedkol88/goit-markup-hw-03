@@ -11,7 +11,7 @@
   --font-color-second: #2e2f42;
   --font-color-first: #434455;
 }
-
+/*----------- DEFAULTS --------------------*/
 .link {
   text-decoration: none;
   color: inherit;
@@ -22,23 +22,23 @@
 button {
   cursor: pointer;
 }
-
 body {
   font-family: var(--font-main);
   background-color: var(--bg-color-main);
   color: var(--font-color-first);
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.02em;
 }
 
+/*----------- LOGO --------------------*/
 .logo {
   color: var(--logo-color-main);
   font-size: 18px;
   font-family: var(--font-logo);
   font-weight: 800;
   line-height: 1.17;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .logo-end-header {
@@ -48,7 +48,7 @@ body {
   color: var(--logo-color-second);
 }
 
-/*======= header begin =======*/
+/*----------- HEADER --------------------*/
 .head {
   background-color: var(--bg-color-main);
 }
@@ -56,12 +56,10 @@ body {
   color: var(--font-color-second);
   font-weight: 500;
 }
-.head-address {
-  font-style: normal;
-}
 .head-address-link {
   color: var(--font-color-first);
   font-weight: 400;
+  font-style: normal;
 }
 .head-nav-link:hover,
 .head-nav-link:focus,
@@ -69,9 +67,8 @@ body {
 .head-address-link:focus {
   color: var(--link-color-active);
 }
-/* ========header end========== */
 
-/*========= main begin ========*/
+/*----------- HERO --------------------*/
 .hero {
   background-color: var(--bg-color-first);
 }
@@ -79,17 +76,17 @@ body {
   color: var(--bg-color-main);
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.02em;
   text-align: center;
 }
 .hero-btn {
   color: var(--bg-color-main);
   background-color: var(--logo-color-main);
-  font-family: inherit;
+  font-family: var(--font-main)
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -97,11 +94,12 @@ body {
   background-color: var(--link-color-active);
 }
 
+/*----------- FEATURES --------------------*/
 .section-title {
   color: var(--font-color-second);
   font-size: 36px;
   line-height: 1.11;
-  letter-spacing: 0.72px;
+  letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
 }
@@ -119,6 +117,7 @@ body {
   letter-spacing: 0.02em;
 }
 
+/*----------- TEAM --------------------*/
 .team {
   background-color: var(--bg-color-second);
 }
@@ -129,6 +128,7 @@ body {
   background-color: var(--bg-color-main);
 }
 
+/*----------- PORTFOLIO --------------------*/
 .filter-btn {
   background-color: var(--bg-color-second);
   color: var(--logo-color-main);
@@ -136,20 +136,18 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
 }
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--link-color-active);
   color: var(--bg-color-main);
 }
-/*========= main end ==========*/
 
-/* ========footer begin======== */
+/*----------- FOOTER --------------------*/
 .foot {
   background-color: var(--bg-color-first);
 }
 .foot-text {
   color: var(--logo-color-second);
 }
-/* ========footer end========== */
