@@ -1,16 +1,23 @@
 :root {
-  --logo-color-main: #4d5ae5;
-  --logo-color-first: #2e2f42;
-  --logo-color-second: #f4f4fd;
-  --bg-color-main: #ffffff;
-  --bg-color-first: #2e2f42;
-  --bg-color-second: #f4f4fd;
-  --link-color-active: #404bbf;
+  /* colors */
+  --navy-blue: #2e2f42;
+  --iris: #4d5ae5;
+  --cloud: #f4f4fd;
+  --white: #ffffff;
+  --grey: #2e2f42;
+  --ocean: #404bbf;
+  --slate: #434455;
+  --green: #31d0aa;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --navy-blue-modal: #2e2f42;
+  --dairy: #fcfcfc;
+
+  /* fonts */
   --font-logo: "Raleway", sans-serif;
   --font-main: "Roboto", sans-serif;
-  --font-color-second: #2e2f42;
-  --font-color-first: #434455;
 }
+
 /*----------- DEFAULTS --------------------*/
 .link {
   text-decoration: none;
@@ -24,16 +31,26 @@ button {
 }
 body {
   font-family: var(--font-main);
-  background-color: var(--bg-color-main);
-  color: var(--font-color-first);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  background-color: var(--white);
+  color: var(--slate);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*----------- LOGO --------------------*/
 .logo {
-  color: var(--logo-color-main);
+  color: var(--iris);
   font-size: 18px;
   font-family: var(--font-logo);
   font-weight: 800;
@@ -42,61 +59,15 @@ body {
   text-transform: uppercase;
 }
 .logo-end-header {
-  color: var(--logo-color-first);
+  color: var(--navy-blue);
 }
 .logo-end-footer {
-  color: var(--logo-color-second);
+  color: var(--cloud);
 }
 
-/*----------- HEADER --------------------*/
-.head {
-  background-color: var(--bg-color-main);
-}
-.head-nav-link {
-  color: var(--font-color-second);
-  font-weight: 500;
-}
-.head-address-link {
-  color: var(--font-color-first);
-  font-weight: 400;
-  font-style: normal;
-}
-.head-nav-link:hover,
-.head-nav-link:focus,
-.head-address-link:hover,
-.head-address-link:focus {
-  color: var(--link-color-active);
-}
-
-/*----------- HERO --------------------*/
-.hero {
-  background-color: var(--bg-color-first);
-}
-.hero-title {
-  color: var(--bg-color-main);
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 0.02em;
-  text-align: center;
-}
-.hero-btn {
-  color: var(--bg-color-main);
-  background-color: var(--logo-color-main);
-  font-family: var(--font-main)
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-}
-.hero-btn:hover,
-.hero-btn:focus {
-  color: var(--bg-color-main);
-  background-color: var(--link-color-active);
-}
-
-/*----------- FEATURES --------------------*/
+/*----------- COMMON STYLES -------------*/
 .section-title {
-  color: var(--font-color-second);
+  color: var(--grey);
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
@@ -104,50 +75,146 @@ body {
   text-align: center;
 }
 .item-title {
-  color: var(--font-color-second);
+  color: var(--grey);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
 .item-text {
-  color: var(--font-color-first);
-  font-size: 16px;
+  color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-/*----------- TEAM --------------------*/
-.team {
-  background-color: var(--bg-color-second);
+/*----------- HEADER --------------------*/
+.head {
+  background-color: var(--white);
 }
-.team-list {
-  background-color: var(--bg-color-main);
+.head-nav-link {
+  color: var(--navyblue, #2e2f42);
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
 }
-.team-item {
-  background-color: var(--bg-color-main);
+.head-address-link {
+  color: var(--slate, #434455);
+  font-style: normal;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+.head-nav-link:hover,
+.head-nav-link:focus,
+.head-address-link:hover,
+.head-address-link:focus {
+  color: var(--ocean, #404bbf);
 }
 
-/*----------- PORTFOLIO --------------------*/
-.filter-btn {
-  background-color: var(--bg-color-second);
-  color: var(--logo-color-main);
-  font-family: inherit;
+/*----------- HERO --------------------*/
+.hero {
+  background: var(--navyblue, #2e2f42);
+}
+.hero-title {
+  color: var(--white, #fff);
+  text-align: center;
+  font-size: 56px;
+  line-height: 1.07; /* 107.143% */
+  letter-spacing: 0.02em;
+}
+.hero-btn {
+  color: var(--white, #fff);
+  background-color: var(--iris);
+  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
 }
-.filter-btn:hover,
-.filter-btn:focus {
-  background-color: var(--link-color-active);
-  color: var(--bg-color-main);
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--white);
+  background-color: var(--ocean);
+}
+
+/*----------- FEATURES --------------------*/
+.features {
+}
+.features-title {
+}
+.features-list {
+}
+.features-item {
+}
+.features-item-title {
+}
+.features-item-text {
+}
+
+/*----------- DOING --------------------*/
+.doing {
+}
+.doing-title {
+}
+.doing-list {
+}
+.doing-item {
+}
+
+/*----------- TEAM --------------------*/
+.team {
+  background: var(--cloud, #f4f4fd);
+}
+.team-list {
+  background-color: var(--white);
+}
+.team-item {
+  background-color: var(--white);
+}
+.team-title {
+}
+.team-item {
+}
+.team-item-title {
+}
+.team-item-text {
 }
 
 /*----------- FOOTER --------------------*/
 .foot {
-  background-color: var(--bg-color-first);
+  background: var(--navyblue, #2e2f42);
 }
 .foot-text {
-  color: var(--logo-color-second);
+  color: var(--cloud, #f4f4fd);
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+
+/*----------- PORTFOLIO --------------------*/
+.portfolio {
+}
+.filter-list {
+}
+.filter-item {
+}
+.filter-btn {
+  color: var(--iris, #4d5ae5);
+  background: var(--cloud, #f4f4fd);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+}
+.cards-list {
+}
+.cards-item {
+}
+.cards-link {
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--ocean);
+  color: var(--white);
 }
