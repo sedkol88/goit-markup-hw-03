@@ -214,22 +214,6 @@ body {
 .team-item-text {
 }
 
-/*----------- FOOTER --------------------*/
-.foot {
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  background: var(--navyblue, #2e2f42);
-}
-.foot-text {
-  margin-top: 16px;
-  margin-bottom: 0;
-
-  color: var(--cloud, #f4f4fd);
-  line-height: 1.5; /* 150% */
-  letter-spacing: 0.02em;
-}
-
 /*----------- PORTFOLIO --------------------*/
 .portfolio {
   padding-top: 96px;
@@ -261,4 +245,20 @@ body {
 .filter-btn:focus {
   background-color: var(--ocean);
   color: var(--white);
+}
+
+/*----------- FOOTER --------------------*/
+.foot {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background: var(--navyblue, #2e2f42);
+}
+.foot-text {
+  margin-top: 16px;
+  margin-bottom: 0;
+
+  color: var(--cloud, #f4f4fd);
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
 }
