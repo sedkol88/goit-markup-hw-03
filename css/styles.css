@@ -24,10 +24,15 @@
   color: inherit;
 }
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 button {
   cursor: pointer;
+}
+img {
+  display: block;
 }
 body {
   font-family: var(--font-main);
@@ -66,7 +71,17 @@ body {
 }
 
 /*----------- COMMON STYLES -------------*/
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1158px;
+  margin: 0 auto;
+  outline: 2px solid tomato;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+
   color: var(--grey);
   font-size: 36px;
   line-height: 1.11;
@@ -75,6 +90,9 @@ body {
   text-align: center;
 }
 .item-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+
   color: var(--grey);
   font-size: 20px;
   font-weight: 500;
@@ -82,6 +100,9 @@ body {
   letter-spacing: 0.02em;
 }
 .item-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--slate);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -89,6 +110,8 @@ body {
 
 /*----------- HEADER --------------------*/
 .head {
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: var(--white);
 }
 .head-nav-link {
@@ -112,11 +135,18 @@ body {
 
 /*----------- HERO --------------------*/
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
   background: var(--navyblue, #2e2f42);
 }
-.hero-title {
-  color: var(--white, #fff);
+.hero > .container {
   text-align: center;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+
+  color: var(--white, #fff);
   font-size: 56px;
   line-height: 1.07; /* 107.143% */
   letter-spacing: 0.02em;
@@ -138,6 +168,8 @@ body {
 
 /*----------- FEATURES --------------------*/
 .features {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .features-title {
 }
@@ -152,6 +184,7 @@ body {
 
 /*----------- DOING --------------------*/
 .doing {
+  padding-bottom: 120px;
 }
 .doing-title {
 }
@@ -162,6 +195,8 @@ body {
 
 /*----------- TEAM --------------------*/
 .team {
+  padding-top: 120px;
+  padding-bottom: 120px;
   background: var(--cloud, #f4f4fd);
 }
 .team-list {
@@ -181,9 +216,15 @@ body {
 
 /*----------- FOOTER --------------------*/
 .foot {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
   background: var(--navyblue, #2e2f42);
 }
 .foot-text {
+  margin-top: 16px;
+  margin-bottom: 0;
+
   color: var(--cloud, #f4f4fd);
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
@@ -191,8 +232,11 @@ body {
 
 /*----------- PORTFOLIO --------------------*/
 .portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .filter-list {
+  margin-bottom: 72px;
 }
 .filter-item {
 }
