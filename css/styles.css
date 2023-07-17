@@ -355,6 +355,7 @@ body {
 .cards-item-box {
   padding: 32px 16px;
   border: 1px solid var(--cornflower);
+  border-top: none;
 }
 .filter-btn:hover,
 .filter-btn:focus {
