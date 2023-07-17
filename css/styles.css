@@ -78,6 +78,9 @@ body {
   margin: 0 auto;
   outline: 2px solid tomato;
 }
+.flex {
+  display: flex;
+}
 .section-title {
   margin-top: 0;
   margin-bottom: 72px;
@@ -113,6 +116,21 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: var(--white);
+
+  outline: 2px solid tomato;
+}
+.head-box {
+  justify-content: space-between;
+}
+.head-nav {
+}
+.head-logo {
+  margin-right: 76px;
+}
+.head-nav-list {
+}
+.head-nav-item:not(:last-child) {
+  margin-right: 40px;
 }
 .head-nav-link {
   color: var(--navyblue, #2e2f42);
@@ -120,6 +138,14 @@ body {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
 }
+.head-address {
+}
+.head-address-list {
+}
+.head-address-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .head-address-link {
   color: var(--slate, #434455);
   font-style: normal;
@@ -137,7 +163,9 @@ body {
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
+
   background: var(--navyblue, #2e2f42);
+  outline: 2px solid tomato;
 }
 .hero > .container {
   text-align: center;
@@ -145,6 +173,9 @@ body {
 .hero-title {
   margin-top: 0;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 496px;
 
   color: var(--white, #fff);
   font-size: 56px;
@@ -170,6 +201,8 @@ body {
 .features {
   padding-top: 120px;
   padding-bottom: 120px;
+
+  outline: 2px solid tomato;
 }
 .features-title {
 }
@@ -185,6 +218,8 @@ body {
 /*----------- DOING --------------------*/
 .doing {
   padding-bottom: 120px;
+
+  outline: 2px solid tomato;
 }
 .doing-title {
 }
@@ -197,7 +232,9 @@ body {
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
+
   background: var(--cloud, #f4f4fd);
+  outline: 2px solid tomato;
 }
 .team-list {
   background-color: var(--white);
@@ -218,6 +255,8 @@ body {
 .portfolio {
   padding-top: 96px;
   padding-bottom: 120px;
+
+  outline: 2px solid tomato;
 }
 .filter-list {
   margin-bottom: 72px;
@@ -253,6 +292,7 @@ body {
   padding-bottom: 100px;
 
   background: var(--navyblue, #2e2f42);
+  outline: 2px solid tomato;
 }
 .foot-text {
   margin-top: 16px;
