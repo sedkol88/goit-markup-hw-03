@@ -312,8 +312,17 @@ body {
   flex-basis: calc(100% / 3 - var(--list-gap));
   margin-left: var(--list-gap);
   margin-top: calc(2 * var(--list-gap));
+  padding-bottom: 32px;
+
+  border: 1px solid var(--cornflower);
 }
 .cards-link {
+}
+.cards-link > img {
+  margin-bottom: 32px;
+}
+.cards-item-box {
+  padding-left: 16px;
 }
 
 .filter-btn:hover,
