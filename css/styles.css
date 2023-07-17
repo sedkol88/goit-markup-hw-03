@@ -121,6 +121,7 @@ body {
   padding-bottom: 24px;
   background-color: var(--white);
 
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
   /* outline: 2px solid tomato; */
 }
 .head-box {
@@ -208,7 +209,8 @@ body {
 /*----------- FEATURES --------------------*/
 .features {
   padding-top: 120px;
-  margin-bottom: 120px;
+
+  /* outline: 2px solid tomato; */
 }
 .features-title {
 }
@@ -226,6 +228,7 @@ body {
 
 /*----------- DOING --------------------*/
 .doing {
+  padding-top: 120px;
   padding-bottom: 120px;
 
   /* outline: 2px solid tomato; */
