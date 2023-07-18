@@ -139,7 +139,6 @@ body {
   margin-right: 40px;
 }
 .head-nav-link {
-  padding: 24px 0;
   color: var(--navyblue, #2e2f42);
   font-weight: 500;
   line-height: 1.5; /* 150% */
@@ -342,7 +341,6 @@ body {
   /* margin-top: calc(2 * var(--list-gap)); */
   margin-right: var(--list-gap);
   margin-bottom: calc(2 * var(--list-gap));
-  padding-bottom: 32px;
 }
 .cards-item:nth-child(3n) {
   margin-right: 0;
@@ -372,11 +370,11 @@ body {
   background: var(--navyblue, #2e2f42);
   /* outline: 2px solid tomato; */
 }
-.foot-logo-link {
-  display: inline-block;
+.foot-logo {
   margin-bottom: 16px;
 }
 .foot-text {
+  margin-top: 0;
   margin-bottom: 0;
   max-width: 264px;
 
