@@ -117,8 +117,8 @@ body {
 
 /*----------- HEADER --------------------*/
 .head {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
   background-color: var(--white);
 
   border-bottom: 1px solid var(--cornflower, #e7e9fc);
@@ -139,6 +139,7 @@ body {
   margin-right: 40px;
 }
 .head-nav-link {
+  display: inline-block;
   color: var(--navyblue, #2e2f42);
   font-weight: 500;
   line-height: 1.5; /* 150% */
@@ -146,6 +147,8 @@ body {
   padding: 24px 0;
 }
 .head-address {
+  display: flex;
+  align-items: center;
 }
 .head-address-list {
 }
